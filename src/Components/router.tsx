@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import { BestPractices } from "./Pages/BestPractices";
 import { Authentication } from "./Pages/BestPractices/authentication";
 import { Authorization } from "./Pages/BestPractices/authorization";
+import { AuthenticationAccessControl } from "./Pages/BestPractices/authenticationAccessControl";
 import { Certificates } from "./Pages/BestPractices/certificates";
 import { ErrorHandling } from "./Pages/BestPractices/errorHandling";
 import { InputValidation } from "./Pages/BestPractices/inputvalidation";
@@ -104,6 +105,11 @@ class Router extends Component {
             path="/bestpractices/authorization"
             exact
             component={Authorization}
+          />
+          <Route
+            path="/bestpractices/authenticationAccessControl"
+            exact
+            component={AuthenticationAccessControl}
           />
           <Route path="/bestpractices/securedata" exact component={SecData} />
           <Route
