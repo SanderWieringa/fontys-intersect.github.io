@@ -6,6 +6,7 @@ import {
   Text,
   Divider,
   ListItem,
+  OrderedList,
   UnorderedList,
   Link,
 } from "@chakra-ui/react";
@@ -194,7 +195,33 @@ export const AuthenticationAccessControl = () => (
       <Text fontSize={"l"} fontWeight={"bold"}>
       Security Analysis
       </Text>
-      <Text fontSize={"xl"}>TODO</Text>
+      <Text fontSize={"l"}>In this section, we analyze for 4 types of attacks, whether the protocol is secure or not.</Text>
+      <OrderedList>
+          <ListItem>
+          Eavesdropping attack
+          </ListItem>
+          <Text fontSize={"l"}>Each session produces a different session key. Someone with knowledge of past session keys cannot deduct future session keys. In Figure 1, the session key is calculated by one way hash and session secrets. Only the user and RA know the “abP”, which is computed from a random key “”. This means that even if previous secrets are leaked, other secrets will remain unknown.
+          </Text>
+      
+          <ListItem>
+          Man-in-the-middle attack
+          </ListItem>
+          <Text fontSize={"l"}>In Figure 1, even if the RA’s secret key is compromised, the previous session key cannot be compromised. This is true because the adversary cannot know the key “a” or “b” making it impossible to compute the session key. 
+          </Text>
+      
+          <ListItem>
+          Key control attack
+          </ListItem>
+          <Text fontSize={"l"}>In this section, we analyze for 4 types of attacks, whether the protocol is secure or not.
+          </Text>
+      
+          <ListItem>
+          Replay attack
+          </ListItem>
+          <Text fontSize={"l"}>In this section, we analyze for 4 types of attacks, whether the protocol is secure or not.
+          </Text>
+      
+        </OrderedList>
       <br/>
       <Text fontSize={"xl"}>TODO</Text>
       <Text fontSize={"l"} fontWeight={"bold"}>
