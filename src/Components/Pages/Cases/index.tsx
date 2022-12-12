@@ -34,6 +34,32 @@ export const CaseOverview = () => (
         applied or is missing.
       </Text>
       <br />
+      <Text fontSize={"l"}>Sept 2022 - Jan 2023</Text>
+      <Divider />
+
+      <UnorderedList>
+        <ListItem>
+          <Link href="#/case/AppleWatch" textColor={"blue"}>
+            AppleWatch&nbsp;
+          </Link>
+          (Apple Watch)
+        </ListItem>
+        <ListItem>
+          <Link href="#/case/#" textColor={"blue"}>
+            FOSCAM&nbsp;
+          </Link>
+          (FOSCAM IP Camera)
+        </ListItem>
+        <ListItem>
+          <Link href="#/case/#" textColor={"blue"}>
+            Google Home&nbsp;
+          </Link>
+          (Google Home)
+        </ListItem>
+      </UnorderedList>
+
+      <br />
+      <br />
       <Text fontSize={"l"}>Sept 2021 - Jan 2022</Text>
       <Divider />
 
