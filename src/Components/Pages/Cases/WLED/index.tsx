@@ -129,7 +129,7 @@ export const Wled = () => (
       alt="test"
       h={"50%"}
       w={"50%"}
-    />
+      />
       <br />
       <Text>
         <Text fontWeight={"bold"}>Fix:</Text> Integrating a form of request
