@@ -152,6 +152,27 @@ export default function Navbar() {
                     Overview
                   </MenuItem>
                   <MenuDivider />
+                  <MenuGroup title="2022-2023">
+                    <MenuItem
+                      as="a"
+                      href="/#/case/AppleWatch"
+                    >
+                      Apple Watch
+                    </MenuItem>
+                    <MenuItem
+                      as="a"
+                      href="/#/case/#"
+                    >
+                      FOSCAM IP Camera 
+                    </MenuItem>
+                    <MenuItem
+                      as="a"
+                      href="/#/case/#"
+                    >
+                      Google Home
+                    </MenuItem>
+                  </MenuGroup>
+                  <br></br>
                   <MenuGroup title="2021-2022"><MenuItem as="a" href="/#/case/wled">
                     WLED
                   </MenuItem>
@@ -160,6 +181,12 @@ export default function Navbar() {
                       href="/#/case/boschsiemens"
                     >
                       Bosch Siemens
+                    </MenuItem>
+                    <MenuItem
+                      as="a"
+                      href="/#/case/AppleWatch"
+                    >
+                      Apple Watch
                     </MenuItem>
                     <MenuItem
                       as="a"

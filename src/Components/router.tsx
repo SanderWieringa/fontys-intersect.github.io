@@ -34,6 +34,7 @@ import {Physical} from "./Pages/Owasp/lackofphysicalhardening";
 import { SmartLock } from "./Pages/Cases/smartLock";
 import { BoschSiemens } from "./Pages/Cases/boschSiemens";
 import { SmartWatch } from "./Pages/Cases/smartWatch";
+import { AppleWatch } from "./Pages/Cases/AppleWatch";
 import { GooveySmartTemp } from "./Pages/Cases/GooveySmartTemp";
 import {SolarEdge} from "./Pages/Cases/solaredge";
 import {Printer} from "./Pages/Cases/printer";
@@ -69,6 +70,7 @@ class Router extends Component {
           <Route path="/case/boschsiemens" exact component={BoschSiemens} />
           <Route path="/case/gooveysmarttemp" exact component={GooveySmartTemp} />
           <Route path="/case/solaredge" exact component={SolarEdge} />
+          <Route path="/case/AppleWatch" exact component={AppleWatch} />
           <Route path="/case/printer" exact component={Printer} />
           <Route path="/case/airquality" exact component={AirQuality} />
           <Route path="/case/smartwatch" exact component={SmartWatch} />
