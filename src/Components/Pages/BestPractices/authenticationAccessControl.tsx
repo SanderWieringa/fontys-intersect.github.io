@@ -31,16 +31,27 @@ export const AuthenticationAccessControl = () => (
       <br />
       <Text fontSize={"xl"}>Explanation</Text>
       <Text fontSize={"ll"}>
-      Along with the emerging trend of IoT, there come challenges in terms of privacy and security. Authentication is a communication protocol processing procedure which could be a solution for IoT security. In IoT, secure communication should be constructed between “Machine A” and another “machine B” by such a procedure. The identity that the second machine or object claims, should be consistent with what the first machine claims. Claimed identity information becomes a single message. Based on this message, we verify the identity of the machines.
+      Along with the emerging trend of IoT, there come challenges in terms of privacy and security. 
+      Authentication is a communication protocol processing procedure which could be a solution for IoT security. 
+      In IoT, secure communication should be constructed between “Machine A” and another “machine B” by such a procedure. 
+      The identity that the second machine or object claims, should be consistent with what the first machine claims. 
+      Claimed identity information becomes a single message. Based on this message, we verify the identity of the machines.
       </Text>
       <br />
       <Text fontSize={"ll"}>
-      To ensure secure high-layer communication, both communication partners must implement the authentication protocol (e.g., application layer). This is often accomplished through a number of sub-tasks that are part of the authentication protocol, such as key switching, identity key establishment, and consultation. Through message identification, an authentication procedure can learn more about the identity of the machine making the claim. ECC (Elliptic Curve Cryptosystem) is a component of this solution architecture for IoT security. We can use the RBAC-based (Role-Based Access Control) authorization approach for the access control policy, utilizing the unique role and application of the machine in the connected IoT network.
+      To ensure secure high-layer communication, both communication partners must implement the authentication protocol 
+      (e.g., application layer). This is often accomplished through a number of sub-tasks that are part of the authentication protocol, 
+      such as key switching, identity key establishment, and consultation. 
+      Through message identification, an authentication procedure can learn more about the identity of the machine making the claim. 
+      ECC (Elliptic Curve Cryptosystem) is a component of this solution architecture for IoT security. 
+      We can use the RBAC-based (Role-Based Access Control) authorization approach for the access control policy, 
+      utilizing the unique role and application of the machine in the connected IoT network.
       </Text>
       <br />
       <Text fontSize={"l"} fontWeight={"bold"}>Architecture</Text>
       <Text fontSize={"l"}>
-      For the architecture we have machines with unique global addresses which are capable of communicating with each other over the internet. In order to organize and manage massive resources, every machine will pre-register on a nearby trustworthy access point denoted in Figure 1 below as RA or Registration Authority. Here the RA is responsible for authenticating machines. The RA is also responsible for keeping a history record of all access requests. 
+      For the architecture we have machines with unique global addresses which are capable of communicating with each other over the internet. 
+      In order to organize and manage massive resources, every machine will pre-register on a nearby trustworthy access point denoted in Figure 1 below as RA or Registration Authority. Here the RA is responsible for authenticating machines. The RA is also responsible for keeping a history record of all access requests. 
       </Text>
       <br />
       <Image
@@ -50,42 +61,44 @@ export const AuthenticationAccessControl = () => (
       w={"50%"}
       />
       <Text fontSize={"l"}>
-      Figure 1: Secure architecture [6]
+      Figure 1: Secure architecture [1]
       </Text>
       <br />
       <Text fontSize={"l"} fontWeight={"bold"}>
       Authentication protocol
       </Text>
       <Text fontSize={"l"}>
-      To better describe the protocol [6], we must first introduce some relevant terms here:
+      To better describe the protocol [1], we must first introduce some relevant terms here:
         <UnorderedList>
           <ListItem>
-          Fp - a finite field
+          <p><b>F<sub>p</sub></b> - a finite field</p>
           </ListItem>
           <ListItem>
-          E - an elliptic curve defined on “FP” with a large order
+          <p><b>E</b> - an elliptic curve defined on “<b>F<sub>p</sub></b>” with a large order</p>
           </ListItem>
           <ListItem>
-          P - a point on “E”;
+          <p><b>P<b/></b> - a point on “<b>E</b>”;</p>
           </ListItem>
           <ListItem>
-          G - the group of elliptic curve points on “E”
+          <p><b>G</b> - the group of elliptic curve points on “<b>E</b>”</p>
           </ListItem>
           <ListItem>
-          h - a public one-way hash function
+          <p><b>h</b> - a public one-way hash function</p>
           </ListItem>
           <ListItem>
-          s - the RA's private key
+          <p><b>s</b> - the RA's private key</p>
           </ListItem>
           <ListItem>
-          IDu - the identity of the user 
+          <p><b>ID<sub>u</sub></b> - the identity of the user</p> 
           </ListItem>
           <ListItem>
-          IDt - the identity of the machine
+          <p><b>ID<sub>t</sub></b> - the identity of the machine</p>
           </ListItem>
         </UnorderedList>
         <br />
-        Key establishments and key distribution are fundamental for entity authentication. We can use either Secret Key Cryptography (SKC) or Public Key Cryptography (PKC) for the implementations. Here are the pros and cons of each algorithm. 
+        Key establishments and key distribution are fundamental for entity authentication. 
+        We can use either Secret Key Cryptography (SKC) or Public Key Cryptography (PKC) for the implementations. 
+        Here are the pros and cons of each algorithm. 
       </Text>
       <br />
       <Text fontSize={"l"} fontWeight={"bold"}>
@@ -143,25 +156,40 @@ export const AuthenticationAccessControl = () => (
        </Text>
       <br />
       <Text fontSize={"l"}>
-      For the example in Figure 1, it is wise to adopt a PKC-based solution. To establish a session key for two machines as an example, only three steps are required [6]:
+      For the example in Figure 1, it is wise to adopt a PKC-based solution. 
+      To establish a session key for two machines as an example, only three steps are required [1]:
       
         <UnorderedList>
           <ListItem>
-          Firstly : RA will produce a random “P ∈ G ” and compute “PS = sP in Fp”
-          Note: the “s” is a secret key that is assigned before the RA has connected. For each user identity “IDu”, RA will generate “Pu = h(IDu)” and the private key of the machine “Su = s Pu”
-
+          <p>Firstly : RA will produce a random “<b>P ∈ G</b>” and compute “<b>P<sub>s</sub> = sP in F<sub>p</sub></b>”
+          Note: the “<b>s</b>” is a secret key that is assigned before the RA has connected. For each user identity “<b>ID<sub>u</sub></b>”, 
+          RA will generate “<b>P<sub>u</sub> = h(ID<sub>u</sub>)</b>” and the private key of the machine “<b>S<sub>u</sub> = s P<sub>u</sub></b>”</p>
           </ListItem>
           <ListItem>
-          Secondly: the user generates a private key “a” and compute “Qu = a Su” and “Qu = a P”. Then the user will send an authentication message “{"{IDu, Qu, h(IDu||IDt||Qu|| Qu)}"}” to the RA. Once the message is received, RA will compute “Qu’’ = s-1Qu” and check whether “h(IDu||IDt||Qu||Qu)” is equal to “h(IDu||IDt||Qu||Qu)” or not. If not, authentication fails. Otherwise go to step 3.
+          <p>Secondly: the user generates a private key “<b>a</b>” and compute “<b>Q<sub>u</sub> = a S<sub>u</sub></b>” and “<b>Q<sub>u</sub> = a P</b>”. 
+          Then the user will send an authentication message <br/>“<b>{"{"}ID<sub>u</sub>, Q<sub>u</sub>, h (ID<sub>u</sub>||ID<sub>t</sub>||Q<sub>u</sub>|| Q<sub>u</sub>) {"}"}</b>” to the RA. 
+          Once the message is received, 
+          RA will compute “<b>Q<sub>u</sub> = s<sup>-1</sup>Q<sub>u</sub></b>” and check whether “<b>h (ID<sub>u</sub>||ID<sub>t</sub>||Q<sub>u</sub>||Q<sub>u</sub>) </b>” 
+          is equal to “<b>h (ID<sub>u</sub>||ID<sub>t</sub>||Q<sub>u</sub>||Q<sub>u</sub>)</b>” or not. 
+          If not, authentication fails. Otherwise go to step 3.</p>
           </ListItem>
           <ListItem>
-          Thirdly: session key establishment takes place. Similarly, the RA will choose a random key “b” and compute “Qt = bP” for the desired machine. The session key will be “h(abP)” based on the ECC algorithm.
+          <p>Thirdly: session key establishment takes place. Similarly, 
+          the RA will choose a random key “<b>b</b>” and compute “<b>Q<sub>t</sub> = bP</b>” for the desired machine. 
+          The session key will be “<b>h (abP)</b>” based on the ECC algorithm.</p>
           </ListItem>
         </UnorderedList>
        </Text>
       <br />
       <Text fontSize={"l"}>
-      To authenticate legitimate users, we would need a central authentication method which is only available with a widely accepted KDC (Key Distribution Center). OpenID solves this problem. OpenID enables users to have a single account that allows them to log on to many different sites by authenticating a single identity provider [10]. User authentication is performed in the user domain or registered OpenID service provider. We Denote it as Home Registration Authority (HRA). A complete request procedure for accessing machines involves seven steps [6] as shown in Figure 1. 
+      To authenticate legitimate users, 
+      we would need a central authentication method which is only available with a widely accepted KDC (Key Distribution Center). 
+      OpenID solves this problem. 
+      OpenID enables users to have a single account that allows them to log on to many different sites by authenticating 
+      a single identity provider [2]. 
+      User authentication is performed in the user domain or registered OpenID service provider. 
+      We Denote it as Home Registration Authority (HRA). 
+      A complete request procedure for accessing machines involves seven steps [1] as shown in Figure 1. 
       </Text>
       <br />
       <Text fontSize={"l"}>
@@ -177,7 +205,7 @@ export const AuthenticationAccessControl = () => (
       Step 4: User responds with the HRA information.
       </Text>
       <Text fontSize={"l"}>
-      Step 5: RA verifies the user’s HRA information and sends the ID verification request to the HRA.
+      Step 5: RA verifies the user's HRA information and sends the ID verification request to the HRA.
       </Text>
       <Text fontSize={"l"}>
       Step 5.1: HRA challenges the user with a question.
@@ -195,89 +223,75 @@ export const AuthenticationAccessControl = () => (
       <Text fontSize={"l"} fontWeight={"bold"}>
       Security Analysis
       </Text>
-      <Text fontSize={"l"}>In this section, we analyze for 4 types of attacks, whether the protocol is secure or not.</Text>
+      <Text fontSize={"l"}>
+      In this section, we analyze for 4 types of attacks, 
+      whether the protocol is secure or not.
+      </Text>
       <OrderedList>
           <ListItem>
           Eavesdropping attack
           </ListItem>
-          <Text fontSize={"l"}>Each session produces a different session key. Someone with knowledge of past session keys cannot deduct future session keys. In Figure 1, the session key is calculated by one way hash and session secrets. Only the user and RA know the “abP”, which is computed from a random key “”. This means that even if previous secrets are leaked, other secrets will remain unknown.
+          <Text fontSize={"l"}>
+          Each session produces a different session key. 
+          Someone with knowledge of past session keys cannot deduct future session keys. 
+          In Figure 1, the session key is calculated by one way hash and session secrets. 
+          Only the user and RA know the “abP”, which is computed from a random key. 
+          This means that even if previous secrets are leaked, other secrets will remain unknown.
           </Text>
-      
           <ListItem>
           Man-in-the-middle attack
           </ListItem>
-          <Text fontSize={"l"}>In Figure 1, even if the RA’s secret key is compromised, the previous session key cannot be compromised. This is true because the adversary cannot know the key “a” or “b” making it impossible to compute the session key. 
+          <Text fontSize={"l"}>
+          <p>In Figure 1, even if the RA's secret key is compromised, the previous session key cannot be compromised. 
+          This is true because the adversary cannot know the key “<b>a</b>” or “<b>b</b>” making it impossible to compute the session key.</p>
           </Text>
-      
           <ListItem>
           Key control attack
           </ListItem>
-          <Text fontSize={"l"}>In this section, we analyze for 4 types of attacks, whether the protocol is secure or not.
+          <Text fontSize={"l"}>
+          Both communication entities select a random number to generate the session key with. 
+          This number is discarded after the session expires. 
+          Neither one can control the outcome of the session by restricting the session key to be generated with a selected value. 
+          This means that this protocol can resist key control attacks.
           </Text>
-      
           <ListItem>
           Replay attack
           </ListItem>
-          <Text fontSize={"l"}>In this section, we analyze for 4 types of attacks, whether the protocol is secure or not.
+          <Text fontSize={"l"}>
+          In case someone with malicious intent got his hands on a valid session key or captured network traffic, 
+          the protocol should resist replay attack by introducing a nonce in every transmitted message.
           </Text>
-      
         </OrderedList>
       <br/>
-      <Text fontSize={"xl"}>TODO</Text>
       <Text fontSize={"l"} fontWeight={"bold"}>
-      TODO
+      Conclusion
       </Text>
       <Text fontSize={"l"}>
-      TODO
-      </Text>
-      <Link fontSize={"l"} fontWeight={"bold"} href="/#/case/smartlock">
-      TODO
-      </Link>
-      <Text fontSize={"l"}>
-      TODO
-
-      </Text>
-      <Link fontSize={"l"} fontWeight={"bold"} href="/#/case/boschsiemens">        
-      TODO
-      </Link>
-      <Text fontSize={"l"}>
-        The bosch siemens case showed a good way to authenticate TODO
-
+      This protocol is a possible authentication and access control method specific for utilization in IoT. 
+      Analysis shows that the approach can prevent attacks like eavesdropping, 
+      man-in-the-middle attack, key control attack and replay attacks.
       </Text>
       <Divider m={2} />
-      <Text fontSize="3xl"> TODO </Text>
+      <Text fontSize="3xl"> Bibliography </Text>
       <Text fontSize={"xl"}>
-      TODO <br />
-        <UnorderedList>
-          {/* <ListItem>
-            INTERSECT. (z.d.). dcypher. Geraadpleegd op 10 december 2020, van
-            https://www.dcypher.nl/en/intersect
-          </ListItem> */}
+        The bibliography according to this page is <br />
+        <OrderedList>
           <ListItem>
-          TODO
-            <Link href="https://pages.nist.gov/800-63-3/sp800-63b.html">
-              NIST <ExternalLinkIcon mx="2px" />
+          Liu, Jing & Xiao, Yang & Chen, C.. (2012). Authentication and Access Control in the Internet of Things. 
+          Int. J. of Security and Networks. 7. 588-592. 10.1109/ICDCSW.2012.23, from &nbsp;
+            <Link href="https://www.researchgate.net/publication/261479017_Authentication_and_Access_Control_in_the_Internet_of_Things#fullTextFileContent">
+              ResearchGate <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
-          TODO;
-            <Link href="https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html">
-            TODO <ExternalLinkIcon mx="2px" />
+          A. Vapen, D. Byers, and N. Shahmehri, “2-clickAuth - optical challenge-response authentication,” 
+          in: Proceedings of 2010 International Conference on Availability, 
+          Reliability and Security, 2010, pp. 79-86, from &nbsp;
+            <Link href="https://www.researchgate.net/publication/224127068_2-clickAuth_Optical_Challenge-Response_Authentication">
+              ResearchGate <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
-          <ListItem>
-          TODO
-            <Link href="https://www.ipswitch.com/blog/internet-of-things-101-iot-device-authentication-explained">
-            TODO <ExternalLinkIcon mx="2px" />
-            </Link>
-          </ListItem>
-          <ListItem>
-          TODO
-            <Link href="https://www.iotforall.com/authentication-iot-securing-front-door">
-            TODO <ExternalLinkIcon mx="2px" />
-            </Link>
-          </ListItem>
-        </UnorderedList>
+        </OrderedList>
       </Text>
     </Container>
     <Container h={"200px"}></Container>
