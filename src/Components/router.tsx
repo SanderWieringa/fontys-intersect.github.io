@@ -15,6 +15,7 @@ import { DataHandling } from "./Pages/BestPractices/dataHandling";
 import { PrivacyStandard } from "./Pages/BestPractices/privacyStandard";
 import { SecretManagement } from "./Pages/BestPractices/secretManagement";
 import { VersionUpdate } from "./Pages/BestPractices/versionUpdate";
+import { PKIprotocol} from "./Pages/BestPractices/PKIprotocol"
 import { Wled } from "./Pages/Cases/WLED";
 import { Homepage } from "./Pages/homepage";
 import { Password } from "./Pages/Owasp/passwords";
@@ -112,6 +113,11 @@ class Router extends Component {
             path="/bestpractices/authenticationAccessControl"
             exact
             component={AuthenticationAccessControl}
+          />
+          <Route
+            path="/bestpractices/PKIprotocol"
+            exact
+            component={PKIprotocol}
           />
           <Route path="/bestpractices/securedata" exact component={SecData} />
           <Route
