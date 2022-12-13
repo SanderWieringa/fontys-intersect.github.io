@@ -24,6 +24,7 @@ export const BestPractices = () => (
         <Link textColor={"blue"} href="/#/bestpractices/authentication"><ListItem>Authentication</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/authorization"><ListItem>Authorization</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/authenticationAccessControl"><ListItem>Authentication and access control</ListItem></Link>
+        <Link textColor={"blue"} href="/#/bestpractices/PKIprotocol"><ListItem>PKI-like Protocol for the Internet of Things</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/securedata"><ListItem>Secure data transfer</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/certificates"><ListItem>Certificates</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/errorhandling"><ListItem>Error handling</ListItem></Link>
