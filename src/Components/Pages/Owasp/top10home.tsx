@@ -33,9 +33,7 @@ export const OwaspHome = () => (
       <Text fontSize={"l"}>
         <OrderedList>
           <ListItem>
-            <Link textColor={"blue"} href="/#/owasp/top/1">
-              Weak, Guessable, or Hardcoded Passwords
-            </Link>
+            <Link textColor={"blue"} href="/#/owasp/top/1">Weak, Guessable, or Hardcoded Passwords</Link>
           </ListItem>
           <ListItem>
             <Link textColor={"blue"} href="/#/owasp/top/2">Insecure Network Services</Link>

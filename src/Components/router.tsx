@@ -20,6 +20,7 @@ import { Wled } from "./Pages/Cases/WLED";
 import { Homepage } from "./Pages/homepage";
 import { Password } from "./Pages/Owasp/passwords";
 import { OwaspHome } from "./Pages/Owasp/top10home";
+import { Research } from "./Pages/Research";
 import { Monitoring } from "./Pages/BestPractices/monitoring";
 import { SmartLockBT } from "./Pages/Cases/smartLockBT";
 
@@ -77,6 +78,7 @@ class Router extends Component {
           <Route path="/case/smartwatch" exact component={SmartWatch} />
           <Route path="/case/smartscreen" exact component={SmartScreen} />
           <Route path="/case" exact component={CaseOverview} />
+          <Route path="/research" exact component={Research} />
           <Route path="/owasp/top" exact component={OwaspHome} />
           <Route path="/owasp/top/1" exact component={Password} />
           <Route path="/owasp/top/2" exact component={Network} />
