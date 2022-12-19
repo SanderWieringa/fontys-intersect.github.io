@@ -20,11 +20,15 @@ export const BestPractices = () => (
         below:
       </Text>
       <br />
+      <br/><p>2022 - 2023</p>  
+      <UnorderedList>     
+        <Link textColor={"blue"} href="/#/bestpractices/authenticationAccessControl"><ListItem>Authentication and access control</ListItem></Link>
+        <Link textColor={"blue"} href="/#/bestpractices/PKIprotocol"><ListItem>PKI-like Protocol for the Internet of Things</ListItem></Link>
+      </UnorderedList>
+      <br /><p>2021 - 2022</p>
       <UnorderedList>
         <Link textColor={"blue"} href="/#/bestpractices/authentication"><ListItem>Authentication</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/authorization"><ListItem>Authorization</ListItem></Link>
-        <Link textColor={"blue"} href="/#/bestpractices/authenticationAccessControl"><ListItem>Authentication and access control</ListItem></Link>
-        <Link textColor={"blue"} href="/#/bestpractices/PKIprotocol"><ListItem>PKI-like Protocol for the Internet of Things</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/securedata"><ListItem>Secure data transfer</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/certificates"><ListItem>Certificates</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/errorhandling"><ListItem>Error handling</ListItem></Link>
@@ -36,7 +40,6 @@ export const BestPractices = () => (
         <Link textColor={"blue"} href="/#/bestpractices/privacy"><ListItem>Privacy by default</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/datahandling"><ListItem>Data handling and transparency</ListItem></Link>
       </UnorderedList>
-      <br />
     </Container>
   </Box>
 );
