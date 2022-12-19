@@ -106,9 +106,15 @@ export default function Navbar() {
                   IoT Security Research
                 </MenuButton>
                 <MenuList>
-                <MenuItem as="a" href="/#/research">
+                  <MenuGroup title="2022 - 2023">
+                  <MenuItem as="a" href="/#/research">
                     Research
                   </MenuItem>
+                  <MenuItem as="a" href="/#">
+                    Process
+                  </MenuItem>
+                  </MenuGroup><br/>
+                  <MenuGroup title="2020 - 2022">
                   <MenuItem as="a" href="/#/owasp/top">
                     OWASP
                   </MenuItem>
@@ -120,6 +126,7 @@ export default function Navbar() {
                     {" "}
                     Tools used
                   </MenuItem>
+                  </MenuGroup>
                 </MenuList>
               </Menu>
               <Link
