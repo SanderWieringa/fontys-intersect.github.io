@@ -106,6 +106,9 @@ export default function Navbar() {
                   IoT Security Research
                 </MenuButton>
                 <MenuList>
+                <MenuItem as="a" href="/#/research">
+                    Research
+                  </MenuItem>
                   <MenuItem as="a" href="/#/owasp/top">
                     OWASP
                   </MenuItem>
