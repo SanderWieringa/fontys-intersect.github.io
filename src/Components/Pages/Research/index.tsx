@@ -20,16 +20,16 @@ import {
         </Text>
         <OrderedList>
             <ListItem>
-            What are the characteristics of IoT? 
+            <Link textColor={"blue"} href="/#/research/characteristics">What are the characteristics of IoT?</Link>
             </ListItem>
             <ListItem>
-            What are the advantages and disadvantages of IoT systems/devices?
+            <Link textColor={"blue"} href="/#/research/characteristics">What are the advantages and disadvantages of IoT systems/devices?</Link>
             </ListItem>
             <ListItem>
-            How effective is current IoT security?
+            <Link textColor={"blue"} href="/#/research/characteristics">How effective is current IoT security?</Link>
             </ListItem>
             <ListItem>
-            What are the most effective strategies to improve IoT security?
+            <Link textColor={"blue"} href="/#/research/characteristics">What are the most effective strategies to improve IoT security?</Link>
             </ListItem>
           </OrderedList>
           <br></br>
@@ -110,14 +110,35 @@ import {
               <th>Explanation</th>
             </tr>
             <tr>
-              <td>Library</td>
-              <td>Griffin</td>
-              <td>Griffin</td>
+              <td>
+                <Image
+                src={"/assets/images/Library.png"}
+                alt="test"
+                h={"50%"}
+                w={"50%"}
+                />
+                Library
+              </td>
+              <td>
+              <UnorderedList>
+                <ListItem>Literature study</ListItem>
+                <ListItem>Available product analysis</ListItem>
+              </UnorderedList>
+              </td>
+              <td>We must find information regarding common IoT security flaws and how we can exploit IoT devices.</td>
             </tr>
             <tr>
-              <td>Lois</td>
-              <td>Griffin</td>
-              <td>Hello</td>
+              <td>
+                <Image
+                src={"/assets/images/Lab.png"}
+                alt="test"
+                h={"50%"}
+                w={"50%"}
+                />
+                Lab
+              </td>
+              <td>Security test</td>
+              <td>We must pen-test IoT devices to find security vulnerabilities. Either part of the common flaws research or new device-specific vulnerabilities.</td>
             </tr>
             </table>
             </ListItem>
@@ -131,26 +152,54 @@ import {
               <th>Explanation</th>
             </tr>
             <tr>
-              <td>Library</td>
-              <td>Griffin</td>
-              <td>Griffin</td>
+              <td>
+                <Image
+                src={"/assets/images/Library.png"}
+                alt="test"
+                h={"50%"}
+                w={"50%"}
+                />
+                Library
+              </td>
+              <td>
+              <UnorderedList>
+                <ListItem>Literature study</ListItem>
+                <ListItem>Available product analysis</ListItem>
+              </UnorderedList>
+              </td>
+              <td>We must find articles describing security solutions for common flaws in IoT devices, both in theory and implemented solutions.</td>
             </tr>
             <tr>
-              <td>Lois</td>
-              <td>Griffin</td>
-              <td>Griffin</td>
+              <td>
+                <Image
+                src={"/assets/images/Lab.png"}
+                alt="test"
+                h={"50%"}
+                w={"50%"}
+                />
+                Lab
+              </td>
+              <td>Non-functional test</td>
+              <td>We must test the operating conditions under which the system delivers its intended functions.</td>
             </tr>
             <tr>
-              <td>Lois</td>
-              <td>Griffin</td>
-              <td>Griffin</td>
+              <td>
+                <Image
+                src={"/assets/images/Workshop.png"}
+                alt="test"
+                h={"50%"}
+                w={"50%"}
+                />
+                Lab
+              </td>
+              <td>Root cause analysis</td>
+              <td>Identify the possible factors that could have led to each common security flaw in IoT devices and each security vulnerability we found during pen testing. For each one, we must define security measures to prevent those problems.</td>
             </tr>
             </table>
             </ListItem>
           </OrderedList>
-          <br></br>
-          
       </Container>
+      <Container h={"200px"}></Container>
     </Box>
   );
   
