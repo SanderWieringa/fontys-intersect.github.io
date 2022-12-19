@@ -7,7 +7,7 @@ export const AppleWatch = () => (
       <br />
       <Text fontSize="xl" fontWeight={"bold"}> Introduction </Text>
       <Text fontSize={'l'}>
-      As part of our testing on IoT devices, we worked on an apple watch to look at how smart watches operate and how are they secured. Although, Apple is different than other manufacturers in terms of operating system and security techniques used on their devices.  </Text>
+      As part of our testing on IoT devices, we worked on an apple watch to look at how smart watches operate and how they are secured. Although, Apple is different from other manufacturers in terms of operating system and security techniques used on their devices.  </Text>
       <br />
       <Text fontSize={'xl'} fontWeight={"bold"}>Table of Contents</Text>
       <UnorderedList>
