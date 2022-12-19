@@ -203,6 +203,26 @@ export default function Navbar() {
                     >
                       Solar Edge
                     </MenuItem>
+                  </MenuGroup><br/>
+                  <MenuGroup title="2020-2021">
+                    <MenuItem
+                      as="a"
+                      href="/#/case/airquality"
+                    >
+                      Air Quality
+                    </MenuItem>
+                    <MenuItem
+                      as="a"
+                      href="/#/case/smartWatch"
+                    >
+                      Smart Watch
+                    </MenuItem>
+                    <MenuItem
+                      as="a"
+                      href="/#/case/smartScreen"
+                    >
+                      Smart Screen 
+                    </MenuItem>
                   </MenuGroup>
                 </MenuList>
               </Menu>
