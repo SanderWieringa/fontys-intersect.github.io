@@ -50,12 +50,6 @@ export const CaseOverview = () => (
           </Link>
           (FOSCAM IP Camera)
         </ListItem>
-        <ListItem>
-          <Link href="#/case/#" textColor={"blue"}>
-            Google Home&nbsp;
-          </Link>
-          (Google Home)
-        </ListItem>
       </UnorderedList>
 
       <br />
