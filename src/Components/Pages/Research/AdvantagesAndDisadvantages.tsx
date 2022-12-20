@@ -83,5 +83,6 @@ export const AdvantagesAndDisadvantages = () => (
       </Text>
       <br></br>
     </Container>
+    <Container h={"200px"}></Container>
   </Box>
 );
