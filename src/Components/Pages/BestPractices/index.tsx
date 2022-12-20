@@ -24,6 +24,9 @@ export const BestPractices = () => (
       <UnorderedList>     
         <Link textColor={"blue"} href="/#/bestpractices/authenticationAccessControl"><ListItem>Authentication and access control</ListItem></Link>
         <Link textColor={"blue"} href="/#/bestpractices/PKIprotocol"><ListItem>PKI-like Protocol for the Internet of Things</ListItem></Link>
+        <Link textColor={"blue"} href="/#/bestpractices/characterizePractices"><ListItem>Characterize "good" and "bad" practices</ListItem></Link>
+        <Link textColor={"blue"} href="/#/bestpractices/categorizationPractices"><ListItem>Categorization of "Best practice" and "Bad practice"</ListItem></Link>
+
       </UnorderedList>
       <br /><p>2020 - 2022</p>
       <UnorderedList>

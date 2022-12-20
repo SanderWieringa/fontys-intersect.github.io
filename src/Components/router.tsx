@@ -15,7 +15,7 @@ import { DataHandling } from "./Pages/BestPractices/dataHandling";
 import { PrivacyStandard } from "./Pages/BestPractices/privacyStandard";
 import { SecretManagement } from "./Pages/BestPractices/secretManagement";
 import { VersionUpdate } from "./Pages/BestPractices/versionUpdate";
-import { PKIprotocol} from "./Pages/BestPractices/PKIprotocol"
+import { PKIprotocol } from "./Pages/BestPractices/PKIprotocol";
 import { Wled } from "./Pages/Cases/WLED";
 import { Homepage } from "./Pages/homepage";
 import { Password } from "./Pages/Owasp/passwords";
@@ -28,36 +28,37 @@ import { Characteristics } from "./Pages/Research/characteristics";
 import { ProsCons } from "./Pages/Research/ProsCons";
 import { IoTStrategies } from "./Pages/Research/IoTStrategies";
 
-import {Network} from "./Pages/Owasp/insecurenetwork";
-import {Interfaces} from "./Pages/Owasp/insecureinterfaces";
-import {Update} from "./Pages/Owasp/lackofupdate";
-import {Outdated} from "./Pages/Owasp/Insecureoroutdatedcomponents";
-import {Privacy} from "./Pages/Owasp/insufficientprivacyprotection";
-import {Storage} from "./Pages/Owasp/insecuredatatransferandstorage";
-import {Management} from "./Pages/Owasp/lackofmanagement";
-import {Settings} from "./Pages/Owasp/insecuredefaultsettings";
-import {Physical} from "./Pages/Owasp/lackofphysicalhardening";
+import { Network } from "./Pages/Owasp/insecurenetwork";
+import { Interfaces } from "./Pages/Owasp/insecureinterfaces";
+import { Update } from "./Pages/Owasp/lackofupdate";
+import { Outdated } from "./Pages/Owasp/Insecureoroutdatedcomponents";
+import { Privacy } from "./Pages/Owasp/insufficientprivacyprotection";
+import { Storage } from "./Pages/Owasp/insecuredatatransferandstorage";
+import { Management } from "./Pages/Owasp/lackofmanagement";
+import { Settings } from "./Pages/Owasp/insecuredefaultsettings";
+import { Physical } from "./Pages/Owasp/lackofphysicalhardening";
 import { SmartLock } from "./Pages/Cases/smartLock";
 import { BoschSiemens } from "./Pages/Cases/boschSiemens";
 import { SmartWatch } from "./Pages/Cases/smartWatch";
 import { AppleWatch } from "./Pages/Cases/AppleWatch";
 import { GooveySmartTemp } from "./Pages/Cases/GooveySmartTemp";
-import {SolarEdge} from "./Pages/Cases/solaredge";
-import {Printer} from "./Pages/Cases/printer";
-import {Article} from "./Pages/Articles/articlehome";
-import {WLEDArticle} from "./Pages/Articles/wledarticle";
-import {SecureArticle} from "./Pages/Articles/articlesecure";
-import {AirQuality} from "./Pages/Cases/airqualitySensor";
+import { SolarEdge } from "./Pages/Cases/solaredge";
+import { Printer } from "./Pages/Cases/printer";
+import { Article } from "./Pages/Articles/articlehome";
+import { WLEDArticle } from "./Pages/Articles/wledarticle";
+import { SecureArticle } from "./Pages/Articles/articlesecure";
+import { AirQuality } from "./Pages/Cases/airqualitySensor";
 import { CaseOverview } from "./Pages/Cases";
-import {SmartScreen} from "./Pages/Cases/smartScreen";
+import { SmartScreen } from "./Pages/Cases/smartScreen";
 import { ToolingOverview } from "./Pages/Tooling";
 import { Burpsuite } from "./Pages/Tooling/burpsuite";
 import { HciTool } from "./Pages/Tooling/hciTool";
 import { PrinterExploitTool } from "./Pages/Tooling/printerExploitTool";
 import { Wireshark } from "./Pages/Tooling/wireshark";
 import { ZeekTooling } from "./Pages/Tooling/zeekTooling";
-import {NetworkSetup} from "./Pages/Tooling/networksetup";
-
+import { NetworkSetup } from "./Pages/Tooling/networksetup";
+import { Categorization } from "./Pages/BestPractices/categorizationPractices";
+import { Characterize } from "./Pages/BestPractices/characterizePractices";
 
 class Router extends Component {
   render() {
@@ -67,19 +68,23 @@ class Router extends Component {
         {/* <Header /> */}
         <Switch>
           <Route path="/research" exact component={Research} />
-          <Route path="/research/characteristics" exact component={Characteristics} />
+          <Route
+            path="/research/characteristics"
+            exact
+            component={Characteristics}
+          />
           <Route path="/research/ProsCons" exact component={ProsCons} />
           <Route path="/research/IoTStrategies" exact component={IoTStrategies} />
-        
-
-
-
           <Route path="/" exact component={Homepage} />
           <Route path="/case/wled" exact component={Wled} />
           <Route path="/case/smartlockbt" exact component={SmartLockBT} />
           <Route path="/case/smartlock" exact component={SmartLock} />
           <Route path="/case/boschsiemens" exact component={BoschSiemens} />
-          <Route path="/case/gooveysmarttemp" exact component={GooveySmartTemp} />
+          <Route
+            path="/case/gooveysmarttemp"
+            exact
+            component={GooveySmartTemp}
+          />
           <Route path="/case/solaredge" exact component={SolarEdge} />
           <Route path="/case/AppleWatch" exact component={AppleWatch} />
           <Route path="/case/printer" exact component={Printer} />
@@ -109,6 +114,17 @@ class Router extends Component {
           <Route path="/tooling/wireshark" exact component={Wireshark} />
           <Route path="/tooling/zeek" exact component={ZeekTooling} />
           <Route path="/tooling/networksetup" exact component={NetworkSetup} />
+
+          <Route
+            path="/bestpractices/categorizationPractices"
+            exact
+            component={Categorization}
+          />
+          <Route
+            path="/bestpractices/characterizePractices"
+            exact
+            component={Characterize}
+          />
           <Route
             path="/bestpractices/authentication"
             exact
