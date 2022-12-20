@@ -25,6 +25,7 @@ import { SmartLockBT } from "./Pages/Cases/smartLockBT";
 
 import { Research } from "./Pages/Research";
 import { Characteristics } from "./Pages/Research/characteristics";
+import { AdvantagesAndDisadvantages } from "./Pages/Research/AdvantagesAndDisadvantages";
 
 import {Network} from "./Pages/Owasp/insecurenetwork";
 import {Interfaces} from "./Pages/Owasp/insecureinterfaces";
@@ -66,7 +67,7 @@ class Router extends Component {
         <Switch>
           <Route path="/research" exact component={Research} />
           <Route path="/research/characteristics" exact component={Characteristics} />
-
+          <Route path="/research/advantagesanddisadvantages" exact component={AdvantagesAndDisadvantages} />
 
           <Route path="/" exact component={Homepage} />
           <Route path="/case/wled" exact component={Wled} />

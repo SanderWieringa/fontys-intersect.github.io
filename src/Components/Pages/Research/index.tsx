@@ -23,7 +23,7 @@ import {
             <Link textColor={"blue"} href="/#/research/characteristics">What are the characteristics of IoT?</Link>
             </ListItem>
             <ListItem>
-            <Link textColor={"blue"} href="/#/research/characteristics">What are the advantages and disadvantages of IoT systems/devices?</Link>
+            <Link textColor={"blue"} href="/#/research/AdvantagesAndDisadvantages">What are the advantages and disadvantages of IoT systems/devices?</Link>
             </ListItem>
             <ListItem>
             <Link textColor={"blue"} href="/#/research/characteristics">How effective is current IoT security?</Link>
