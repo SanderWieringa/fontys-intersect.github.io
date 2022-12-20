@@ -23,6 +23,9 @@ import { OwaspHome } from "./Pages/Owasp/top10home";
 import { Monitoring } from "./Pages/BestPractices/monitoring";
 import { SmartLockBT } from "./Pages/Cases/smartLockBT";
 
+import { Research } from "./Pages/Research";
+import { Characteristics } from "./Pages/Research/characteristics";
+
 import {Network} from "./Pages/Owasp/insecurenetwork";
 import {Interfaces} from "./Pages/Owasp/insecureinterfaces";
 import {Update} from "./Pages/Owasp/lackofupdate";
@@ -61,7 +64,8 @@ class Router extends Component {
         <Navbar />
         {/* <Header /> */}
         <Switch>
-
+          <Route path="/research" exact component={Research} />
+          <Route path="/research/characteristics" exact component={Characteristics} />
 
 
           <Route path="/" exact component={Homepage} />

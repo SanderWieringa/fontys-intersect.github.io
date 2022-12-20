@@ -79,7 +79,7 @@ export const Homepage = () => (
                             About nwo <ExternalLinkIcon mx="2px"/>
                         </Link>
                     </ListItem>
-                </UnorderedList>
+                </UnorderedList><br/>
             </Text>
         </Container>
         <Container h={"200px"}></Container>

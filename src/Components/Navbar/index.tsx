@@ -106,6 +106,15 @@ export default function Navbar() {
                   IoT Security Research
                 </MenuButton>
                 <MenuList>
+                  <MenuGroup title="2022 - 2023">
+                  <MenuItem as="a" href="/#/research">
+                    Research
+                  </MenuItem>
+                  <MenuItem as="a" href="/#">
+                    Process
+                  </MenuItem>
+                  </MenuGroup><br/>
+                  <MenuGroup title="2020 - 2022">
                   <MenuItem as="a" href="/#/owasp/top">
                     OWASP
                   </MenuItem>
@@ -117,6 +126,7 @@ export default function Navbar() {
                     {" "}
                     Tools used
                   </MenuItem>
+                  </MenuGroup>
                 </MenuList>
               </Menu>
               <Link
@@ -165,12 +175,6 @@ export default function Navbar() {
                     >
                       FOSCAM IP Camera 
                     </MenuItem>
-                    <MenuItem
-                      as="a"
-                      href="/#/case/#"
-                    >
-                      Google Home
-                    </MenuItem>
                   </MenuGroup>
                   <br></br>
                   <MenuGroup title="2021-2022"><MenuItem as="a" href="/#/case/wled">
@@ -181,12 +185,6 @@ export default function Navbar() {
                       href="/#/case/boschsiemens"
                     >
                       Bosch Siemens
-                    </MenuItem>
-                    <MenuItem
-                      as="a"
-                      href="/#/case/AppleWatch"
-                    >
-                      Apple Watch
                     </MenuItem>
                     <MenuItem
                       as="a"
@@ -214,6 +212,26 @@ export default function Navbar() {
                       href="/#/case/solaredge"
                     >
                       Solar Edge
+                    </MenuItem>
+                  </MenuGroup><br/>
+                  <MenuGroup title="2020-2021">
+                    <MenuItem
+                      as="a"
+                      href="/#/case/airquality"
+                    >
+                      Air Quality
+                    </MenuItem>
+                    <MenuItem
+                      as="a"
+                      href="/#/case/smartWatch"
+                    >
+                      Smart Watch
+                    </MenuItem>
+                    <MenuItem
+                      as="a"
+                      href="/#/case/smartScreen"
+                    >
+                      Smart Screen 
                     </MenuItem>
                   </MenuGroup>
                 </MenuList>
