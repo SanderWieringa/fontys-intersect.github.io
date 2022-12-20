@@ -157,6 +157,6 @@ export const CaseOverview = () => (
         </ListItem>
       </UnorderedList>
     </Container>
-    <Container h={"200px"}></Container>
+    <Container h={"300px"}></Container>
   </Box>
 );
