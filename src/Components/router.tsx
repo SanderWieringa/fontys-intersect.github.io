@@ -24,6 +24,7 @@ import { Monitoring } from "./Pages/BestPractices/monitoring";
 import { SmartLockBT } from "./Pages/Cases/smartLockBT";
 
 import { Research } from "./Pages/Research";
+import { Characteristics } from "./Pages/Research/characteristics";
 import { ProsCons } from "./Pages/Research/ProsCons";
 import { CurrentSecurity } from "./Pages/Research/CurrentSecurity";
 import { IoTStrategies } from "./Pages/Research/IoTStrategies";
@@ -68,13 +69,11 @@ class Router extends Component {
         {/* <Header /> */}
         <Switch>
           <Route path="/research" exact component={Research} />
-          <Route
-            path="/research/CurrentSecurity"
-            exact
-            component={CurrentSecurity}
-          />
+          <Route path="/research/CurrentSecurity" exact component={CurrentSecurity}/>
           <Route path="/research/ProsCons" exact component={ProsCons} />
           <Route path="/research/IoTStrategies" exact component={IoTStrategies} />
+          <Route path="/research/characteristics" exact component={Characteristics} />
+
           <Route path="/" exact component={Homepage} />
           <Route path="/case/wled" exact component={Wled} />
           <Route path="/case/smartlockbt" exact component={SmartLockBT} />
