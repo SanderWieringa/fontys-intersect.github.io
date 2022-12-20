@@ -10,7 +10,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-export const Characteristics = () => (
+export const CurrentSecurity = () => (
   <Box w={"100%"} alignItems="center">
     <Container maxW={["100%", "80%"]} p={4}>
       <Text fontSize="3xl"> How effective is current IoT security? </Text>
