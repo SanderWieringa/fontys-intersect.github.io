@@ -183,6 +183,8 @@ export const Characteristics = () => (
         <ListItem>ZigBee is a low-power, low-data rate wireless network used in industrial settings. Based on the IEEE 802.15.4 standard for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios.</ListItem>
       </UnorderedList>
     </Container>
-    <Container h={"200px"}></Container>
+
+    <Container h={"250px"}></Container>
+
   </Box>
 );

@@ -11,7 +11,7 @@ import {
   
   export const Research = () => (
     <Box w={"100%"} alignItems="center">
-      <Container maxW={["100%", "80%"]} h={"100vh"} p={4}>
+      <Container maxW={["100%", "80%"]}  p={4}>
         <Text fontSize="3xl"> Solution approach  </Text>
         <br></br>
         <Text fontSize={"xl"}><b>Research questions</b></Text>
@@ -23,7 +23,7 @@ import {
             <Link textColor={"blue"} href="/#/research/characteristics">What are the characteristics of IoT?</Link>
             </ListItem>
             <ListItem>
-            <Link textColor={"blue"} href="/#/research/AdvantagesAndDisadvantages">What are the advantages and disadvantages of IoT systems/devices?</Link>
+            <Link textColor={"blue"} href="/#/research/ProsCons">What are the advantages and disadvantages of IoT systems/devices?</Link>
             </ListItem>
             <ListItem>
             <Link textColor={"blue"} href="/#/research/characteristics">How effective is current IoT security?</Link>
@@ -199,7 +199,9 @@ import {
             </ListItem>
           </OrderedList>
       </Container>
-      <Container h={"400px"}></Container>
+
+      <Container h={"250px"}></Container>
+
     </Box>
   );
   

@@ -25,6 +25,7 @@ export const Footer = () => {
       w="100%"
       mt={"-200px"}
       marginTop={"auto"}
+      position="absolute"
     >
       <Container as={Stack} maxW="8xl">
         <SimpleGrid columns={[2, 2, 4]} row={[2, 2, 1]} spacing={4}>
