@@ -29,7 +29,7 @@ import {
             <Link textColor={"blue"} href="/#/research/characteristics">How effective is current IoT security?</Link>
             </ListItem>
             <ListItem>
-            <Link textColor={"blue"} href="/#/research/characteristics">What are the most effective strategies to improve IoT security?</Link>
+            <Link textColor={"blue"} href="/#/research/IoTStrategies">What are the most effective strategies to improve IoT security?</Link>
             </ListItem>
           </OrderedList>
           <br></br>

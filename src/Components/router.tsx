@@ -26,6 +26,7 @@ import { SmartLockBT } from "./Pages/Cases/smartLockBT";
 import { Research } from "./Pages/Research";
 import { Characteristics } from "./Pages/Research/characteristics";
 import { ProsCons } from "./Pages/Research/ProsCons";
+import { IoTStrategies } from "./Pages/Research/IoTStrategies";
 
 import {Network} from "./Pages/Owasp/insecurenetwork";
 import {Interfaces} from "./Pages/Owasp/insecureinterfaces";
@@ -68,6 +69,8 @@ class Router extends Component {
           <Route path="/research" exact component={Research} />
           <Route path="/research/characteristics" exact component={Characteristics} />
           <Route path="/research/ProsCons" exact component={ProsCons} />
+          <Route path="/research/IoTStrategies" exact component={IoTStrategies} />
+        
 
 
 
