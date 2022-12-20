@@ -102,5 +102,6 @@ export const Characteristics = () => (
         </UnorderedList>
       </Text>
     </Container>
+    <Container h={"250px"}></Container>
   </Box>
 );
