@@ -12,64 +12,76 @@ import {
 
 export const AdvantagesAndDisadvantages = () => (
   <Box w={"100%"} alignItems="center">
-    <Image
-      src={"/assets/images/owasp-logo.png"}
-      alt="test"
-      h={"15%"}
-      w={"15%"}
-      marginLeft={"10%"}
-      marginTop={"1%"}
-    />
     <Container maxW={["100%", "80%"]} p={4}>
-      <Text fontSize="3xl"> AdvantagesAndDisadvantages </Text>
-      <Text fontSize={"l"}>
-        TODO
-      </Text>
+    <Text fontSize="3xl"> What are the advantages and disadvantages of IoT systems/devices?</Text>
       <br />
       <Text fontSize={"l"}>
-      TODO
+      <b>Pros and cons of IoT </b>
       </Text>
-      <br />
-      <Text fontSize={"xl"}>TODO</Text>
       <Text fontSize={"l"}>
-      TODO
-        <UnorderedList>
-          <ListItem>
-            <Link href="#/case/wled" textColor={"blue"}>
-            TODO
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="#/case/printer" textColor={"blue"}>
-            TODO
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="#/case/airquality" textColor={"blue"}>
-            TODO
-            </Link>
-          </ListItem>
-        </UnorderedList>
+        IoT systems and devices come with a plethora of disadvantages and advantages.
       </Text>
-      <Divider m={2} />
-      <Text fontSize="3xl"> TODO </Text>
-      <Text fontSize={"xl"}>
-      TODO <br />
-        <UnorderedList>
-          <ListItem>
-          TODO
-            <Link href="https://www.keyfactor.com/blog/top-10-iot-vulnerabilities-in-your-devices/#:~:text=of%20Physical%20Hardening-,Lack%20of%20a%20Secure%20Update%20Mechanism,to%20securely%20update%20the%20device.&text=Some%20devices%20may%20have%20reached,critical%20to%20addressing%20this%20vulnerability.">
-            TODO <ExternalLinkIcon mx="2px" />
-            </Link>
-          </ListItem>
-          <ListItem>
-          TODO
-            <Link href="https://www.appsealing.com/owasp-iot-top-10/">
-            TODO <ExternalLinkIcon mx="2px" />
-            </Link>
-          </ListItem>
-        </UnorderedList>
+      <br></br>
+      <Text fontSize={"l"}>
+        Advantages (pros) of IoT:
       </Text>
+      <br></br>
+      <UnorderedList>
+        <ListItem>Ability to access information from anywhere at any time on any device.</ListItem>
+        <ListItem>Improved communication between connected electronic devices.</ListItem>
+        <ListItem>Transferring data packets over a connected network saving time and money.</ListItem>
+        <ListItem>Automating tasks helps to improve the quality of a business's services and reduces the need for human intervention.</ListItem>
+      </UnorderedList>
+      <br></br>
+      <Text fontSize={"l"}>
+        Disadvantages (cons) of IoT:
+      </Text>
+      <br></br>
+      <UnorderedList>
+        <ListItem>The likelihood that a hacker may obtain confidential information rises as the number of connected devices rises and information is transmitted more widely between devices.</ListItem>
+        <ListItem>Enterprises may eventually have to deal with massive numbers of IoT devices and collecting and managing the data from all those devices will be challenging.</ListItem>
+        <ListItem>If there is a bug in the system, every connected device will become corrupted.</ListItem>
+        <ListItem>Since there is no international compatibility standard for IoT, it is difficult for devices from different manufacturers to communicate with each other.</ListItem>
+      </UnorderedList>
+      <br />
+      <Text fontSize={"l"}>
+      <b>Benefits of IoT in organizations and industries</b>
+      </Text>
+      <br></br>
+      <Text fontSize={"l"}>
+        The internet of things offers several benefits to organizations. Some benefits are industry-specific, and some are applicable across multiple industries. IoT touches every industry, including healthcare, finance, retail, and manufacturing businesses. IoT is most abundant in manufacturing, transportation, and utility organizations. It makes use of sensors and other IoT devices.
+      </Text>
+      <br></br>
+      <Text fontSize={"l"}>
+        Some of the well-established benefits of IoT enable businesses to:
+      </Text>
+      <br></br>
+      <UnorderedList>
+        <ListItem>Monitor their overall business processes.</ListItem>
+        <ListItem>Improve the customer experience (CX).</ListItem>
+        <ListItem>Save time and money.</ListItem>
+        <ListItem>Enhance employee productivity</ListItem>
+        <ListItem>Integrate and adapt business models.</ListItem>
+        <ListItem>Make better business decisions.</ListItem>
+        <ListItem>Generate more revenue.</ListItem>
+        <ListItem>Improve business strategies.</ListItem>
+      </UnorderedList>
+      <br></br>
+      <Text fontSize={"l"}>
+        IoT benefits in agriculture revolve around sensors that can collect data on rainfall, humidity, temperature, and soil content, as well as other factors that would help automate farming techniques. Infrastructure sensors, for example, could monitor events or changes within structural buildings, bridges, and other infrastructure, bringing benefits such as:
+      </Text>
+      <br></br>
+      <UnorderedList>
+        <ListItem>Cost saving.</ListItem>
+        <ListItem>Saved time.</ListItem>
+        <ListItem>Quality-of-life workflow changes.</ListItem>
+        <ListItem>Paperless workflow.</ListItem>
+      </UnorderedList>
+      <br></br>
+      <Text fontSize={"l"}>
+        IoT also provides benefits in home automation. Businesses can utilize IoT to monitor and manipulate mechanical and electrical systems in a building. On a broader scale, smart cities can help citizens reduce waste and energy consumption.
+      </Text>
+      <br></br>
     </Container>
   </Box>
 );

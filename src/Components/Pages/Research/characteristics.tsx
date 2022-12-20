@@ -12,14 +12,6 @@ import {
 
 export const Characteristics = () => (
   <Box w={"100%"} alignItems="center">
-    <Image
-      src={"/assets/images/owasp-logo.png"}
-      alt="test"
-      h={"15%"}
-      w={"15%"}
-      marginLeft={"10%"}
-      marginTop={"1%"}
-    />
     <Container maxW={["100%", "80%"]} p={4}>
       <Text fontSize="3xl"> What are the characteristics of IoT? </Text>
       <br />
