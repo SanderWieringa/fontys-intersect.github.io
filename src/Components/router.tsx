@@ -46,6 +46,7 @@ import { GooveySmartTemp } from "./Pages/Cases/GooveySmartTemp";
 import { SolarEdge } from "./Pages/Cases/solaredge";
 import { Printer } from "./Pages/Cases/printer";
 import { Article } from "./Pages/Articles/articlehome";
+import { Ehealth } from "./Pages/Articles/Ehealth";
 import { WLEDArticle } from "./Pages/Articles/wledarticle";
 import { SecureArticle } from "./Pages/Articles/articlesecure";
 import { AirQuality } from "./Pages/Cases/airqualitySensor";
@@ -103,6 +104,7 @@ class Router extends Component {
           <Route path="/owasp/top/9" exact component={Settings} />
           <Route path="/owasp/top/10" exact component={Physical} />
           <Route path="/article/home" exact component={Article} />
+          <Route path="/article/Ehealth" exact component={Ehealth} />
           <Route path="/article/wled" exact component={WLEDArticle} />
           <Route path="/article/network" exact component={SecureArticle} />
           <Route path="/bestpractices" exact component={BestPractices} />

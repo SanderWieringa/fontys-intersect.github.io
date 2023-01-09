@@ -113,6 +113,10 @@ export default function Navbar() {
                   <MenuItem as="a" href="/#">
                     Process
                   </MenuItem>
+                  <MenuItem as="a" href="/#/article/Ehealth">
+                    {" "}
+                    Articles
+                  </MenuItem>
                   </MenuGroup><br/>
                   <MenuGroup title="2020 - 2022">
                   <MenuItem as="a" href="/#/owasp/top">
