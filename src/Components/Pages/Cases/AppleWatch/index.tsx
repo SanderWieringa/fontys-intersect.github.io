@@ -11,7 +11,7 @@ export const AppleWatch = () => (
       <br />
       <Text fontSize={'xl'} fontWeight={"bold"}>Table of Contents</Text>
       <UnorderedList>
-          <ListItem>Case Expectations</ListItem>
+        <ListItem>Case Expectations</ListItem>
         <ListItem>Strengths</ListItem>
         <ListItem >results</ListItem>
         <ListItem>Best practices</ListItem>
@@ -92,12 +92,12 @@ export const AppleWatch = () => (
              
          </Text><br></br>
          <Image
-      src={"/assets/images/AppleWatchPairing.jpg"}
-      alt="test"
-      h={"25%"}
-      w={"25%"}
-      marginLeft={"40%"}
-    />
+          src={"/assets/images/AppleWatchPairing.jpg"}
+          alt="test"
+          h={"25%"}
+          w={"25%"}
+          marginLeft={"40%"}
+        />
         <br/>
         <Text id={"Bestpractices"} fontSize={'xl'} fontWeight={"bold"}>Best practices</Text>
         <Text fontSize="l" >

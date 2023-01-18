@@ -45,7 +45,7 @@ export const CaseOverview = () => (
           (Apple Watch)
         </ListItem>
         <ListItem>
-          <Link href="#/case/#" textColor={"blue"}>
+          <Link href="#/case/foscam" textColor={"blue"}>
             FOSCAM&nbsp;
           </Link>
           (FOSCAM IP Camera)

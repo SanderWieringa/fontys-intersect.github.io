@@ -175,7 +175,7 @@ export default function Navbar() {
                     </MenuItem>
                     <MenuItem
                       as="a"
-                      href="/#/case/#"
+                      href="/#/case/foscam"
                     >
                       FOSCAM IP Camera 
                     </MenuItem>
