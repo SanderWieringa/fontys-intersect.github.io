@@ -110,7 +110,7 @@ export default function Navbar() {
                   <MenuItem as="a" href="/#/research">
                     Research
                   </MenuItem>
-                  <MenuItem as="a" href="/#">
+                  <MenuItem as="a" href="/#/article/process">
                     Process
                   </MenuItem>
                   <MenuItem as="a" href="/#/article/Ehealth">
