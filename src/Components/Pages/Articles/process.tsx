@@ -2,6 +2,10 @@ import {
     Box,
     Container,
     Text,
+    Image,
+    UnorderedList,
+    ListItem,
+
   } from "@chakra-ui/react";
   
   export const Process = () => (
@@ -18,7 +22,6 @@ import {
         <Image
           src={"/assets/images/methodology.png"}
           alt="The methodology of research."
-          margin{"auto"}
         />
         <Text>
             This project relies on the research performed by several generations of cybersecurity students from Fontys
@@ -47,7 +50,6 @@ import {
             <Image
               src={"/assets/images/Impact.png"}
               alt="Impact assessment table."
-              margin{"auto"}
             />
             <br/>
             In this example, we took several devices you can typically find in personal use and analyzed the potential for their misuse against the owner.
@@ -86,7 +88,6 @@ import {
             <Image
               src={"/assets/images/Risks.png"}
               alt="Impact assessment table."
-              margin{"auto"}
             />
         </Text>
         <br />
